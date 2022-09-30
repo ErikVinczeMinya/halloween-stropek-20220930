@@ -1,0 +1,7 @@
+<div class="game-area">
+  <div *ngFor="let item of gameBoard; let i = index" [class]="item" (click)="onIconClick(i)"></div>
+</div>
+<div class="footer">
+  <div class="logo"></div>
+  <div class="points">Points: {{points}}</div>
+</div>

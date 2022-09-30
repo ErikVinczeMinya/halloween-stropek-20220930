@@ -1,1 +1,128 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://cddataexchange.blob.core.windows.net/data-exchange/halloween-puzzle/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .game-area {
+    margin-top: 5vh;
+    max-height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .game-area > div {
+    width: 10vw;
+    height: 10vw;
+    min-width: 50px;
+    min-height: 50px;
+    max-width: 75px;
+    max-height: 75px;
+    background-color: rgba(255, 255, 255, 0.219);
+    margin: 2px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .footer {
+    height: 20vh;
+    width: calc(60vw + 2px * 8);
+    max-width: calc(75px * 6 + 2px * 8);
+    min-width: calc(50px * 6 + 2px * 8);
+    display: flex;
+    flex-direction: row;
+  }
+
+  @font-face {
+    font-family: "SedgwickAveDisplay Regular";
+    src: url("https://cddataexchange.blob.core.windows.net/images/monster-run/fonts/MountainsofChristmas-Bold.ttf");
+  }
+
+  .points {
+    font-family: "SedgwickAveDisplay Regular";
+    font-size: 50px;
+    color: #93bd21;
+    width: 100%;
+    text-align: right;
+    margin-top: 15px;
+  }
+
+  .logo {
+    background-image: url(https://cddataexchange.blob.core.windows.net/data-exchange/halloween-puzzle/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    width: 20vw;
+    height: 10vw;
+    min-width: 100px;
+    min-height: 50px;
+    max-width: 150px;
+    max-height: 75px;
+    margin-top: 15px;
+  }
+
+  .disappear {
+    animation: disappear-frames 0.5s normal;
+  }
+
+  @keyframes disappear-frames {
+    to { background-color: #93bd21; }
+  }
+
+  .bomb {
+    background-image: url(https://cddataexchange.blob.core.windows.net/data-exchange/halloween-puzzle/game-item1.png);
+    background-size: 50%;
+  }
+
+  .pumpkin {
+    background-image: url(https://cddataexchange.blob.core.windows.net/data-exchange/halloween-puzzle/game-item2.png);
+    background-size: 60%;
+  }
+
+  .sweet-blue {
+    background-image: url(https://cddataexchange.blob.core.windows.net/data-exchange/halloween-puzzle/game-item3.png);
+    background-size: 80%;
+  }
+
+  .ghost {
+    background-image: url(https://cddataexchange.blob.core.windows.net/data-exchange/halloween-puzzle/game-item4.png);
+    background-size: 65%;
+  }
+
+  .skull {
+    background-image: url(https://cddataexchange.blob.core.windows.net/data-exchange/halloween-puzzle/game-item5.png);
+    background-size: 60%;
+  }
+
+  .sweet-green {
+    background-image: url(https://cddataexchange.blob.core.windows.net/data-exchange/halloween-puzzle/game-item6.png);
+    background-size: 80%;
+  }
+
+  .sweet-pink {
+    background-image: url(https://cddataexchange.blob.core.windows.net/data-exchange/halloween-puzzle/game-item7.png);
+    background-size: 80%;
+  }
+
+  .eye {
+    background-image: url(https://cddataexchange.blob.core.windows.net/data-exchange/halloween-puzzle/game-failed-eye.png);
+    background-size: 70%;
+  }
+
+  .heart {
+    background-image: url(https://cddataexchange.blob.core.windows.net/data-exchange/halloween-puzzle/wheel-prize1.png);
+    background-size: 60%;
+  }
+
+  .potion {
+    background-image: url(https://cddataexchange.blob.core.windows.net/data-exchange/halloween-puzzle/wheel-prize2.png);
+    background-size: 60%;
+  }
